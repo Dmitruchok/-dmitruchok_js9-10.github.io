@@ -8,6 +8,29 @@ header {
   width: 700px;
 }
 
+nav {
+  background: linear-gradient(to bottom, #000, #eee);
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.one_line_menue  li {
+  display: inline-block;
+}
+
+.two_line_menue,
+.three_line_menue,
+.four_line_menue {
+  display: none;
+}
+
 .checkbox_outher{
   display: flex;
   flex-direction: column;
