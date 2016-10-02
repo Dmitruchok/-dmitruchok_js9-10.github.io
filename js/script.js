@@ -2,6 +2,8 @@
   console.log('DOMContentLoaded');
 });*/
 
-$(function () {
-
+$(function() {
+    $('.fotorama').fotorama({
+        // Configuration goes here
+    });
 });

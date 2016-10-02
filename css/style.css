@@ -1,6 +1,9 @@
-.wrapper {
-  margin: 100px auto;
-  width: 620px;
-  height: 370px;
-  border: 1px solid #c5c5c5;
+.header {
+  background-image: url(../img/nike-run.png);
+  background-size: cover;
+}
+
+.fotorama {
+  padding: 30px 0 30px 460px;
+  width: 700px;
 }
