@@ -7,9 +7,10 @@ $(function() {
  });
 
  var $links = $('.one_line_menue a');
- $links.on('click', function (e) {
-   e.preventDefault();
+ $links.mousemove(function () {
   var $nextLineMenue = $(this).siblings('ul');
   $nextLineMenue.slideToggle();
- })
+}).mouseout(function () {
+  $nextLineMenue.hide();
+})
 });

@@ -25,6 +25,10 @@ nav a {
   display: flex;
 }
 
+.one_line_menue li {
+  padding: 10px 10px;
+}
+
 .two_line_menue,
 .three_line_menue,
 .four_line_menue {
