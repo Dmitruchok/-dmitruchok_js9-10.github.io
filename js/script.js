@@ -3,7 +3,5 @@
 });*/
 
 $(function() {
-    $('.fotorama').fotorama({
-        // Configuration goes here
-    });
+  $(function(){ $("select").uniform(); });
 });

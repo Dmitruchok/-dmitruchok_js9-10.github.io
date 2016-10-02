@@ -12,18 +12,38 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/fotorama.js"></script>
 
+    <!--SELECTBOX-->
+    <script src="js/jquery.uniform.bundled.js"></script>
+    <link href="css/agent.css" rel="stylesheet">
+    <!--CHECKBOX-->
+    <script src="js/jquery.checkbox.js"></script>
+
   </head>
 
   <body>
-<div class="header">
+<header>
   <div class="fotorama"
        data-allowfullscreen="native">
     <img src="img/2-nike.jpg">
     <img src="img/3-native_600.jpg">
     <img src="img/4-Neymar.jpg">
   </div>
-</div>
+</header>
 
+<section>
+  <select>
+    <option>--Выберите раздел--</option>
+    <option>Обувь</option>
+    <option>Куртуки</option>
+    <option>Спортивные костюмы</option>
+    <option>Аксессуары</option>
+    <option>Футболки</option>
+  </select>
 
+  <span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+
+</section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
