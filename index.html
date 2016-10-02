@@ -6,17 +6,18 @@
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
+    <!--CHECKBOX-->
+    <script src="js/jquery.checkbox.js"></script>
+
+    <!--SELECTBOX-->
+    <link href="css/agent.css" rel="stylesheet">
+    <script src="js/jquery.uniform.bundled.js"></script>
+
     <!-- Fotorama -->
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/fotorama.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/fotorama.js"></script>
-
-    <!--SELECTBOX-->
-    <script src="js/jquery.uniform.bundled.js"></script>
-    <link href="css/agent.css" rel="stylesheet">
-    <!--CHECKBOX-->
-    <script src="js/jquery.checkbox.js"></script>
 
   </head>
 
@@ -31,7 +32,7 @@
 </header>
 
 <section>
-  <select>
+  <select class="goods">
     <option>--Выберите раздел--</option>
     <option>Обувь</option>
     <option>Куртуки</option>
@@ -40,7 +41,20 @@
     <option>Футболки</option>
   </select>
 
-  <span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+  <select class="size">
+    <option>--Выберите размер--</option>
+    <option>S</option>
+    <option>M</option>
+    <option>L</option>
+    <option>XL</option>
+    <option>XXL</option>
+  </select>
+
+<div class="checkbox_outher">
+  <span class="niceCheck"><input type="checkbox"></span>
+  <input type="checkbox" id="checkbox_css">
+  <label for="checkbox_css">Отфильтровать по популярности</label>
+</div>
 
 </section>
 

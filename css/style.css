@@ -1,6 +1,6 @@
 header {
   background-image: url(../img/nike-run.png);
-  background-size: cover;
+  background-size: contain;
 }
 
 .fotorama {
@@ -8,9 +8,11 @@ header {
   width: 700px;
 }
 
-.select {
-  width: 300px;
+.checkbox_outher{
+  display: flex;
+  flex-direction: column;
 }
+
 
 .niceCheck {
   width: 35px;
@@ -22,4 +24,27 @@ header {
 
 .niceCheck input {
   display: none;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+label:before {
+    content: " ";
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background: url(../img/checkbox-nice.png);
+    position: relative;
+    top: 3px;
+}
+
+input[type=checkbox]:checked + label:before {
+background-position: -47px 0;
 }
