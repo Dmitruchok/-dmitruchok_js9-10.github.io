@@ -21,8 +21,8 @@ nav a {
   text-decoration: none;
 }
 
-.one_line_menue  li {
-  display: inline-block;
+.one_line_menue {
+  display: flex;
 }
 
 .two_line_menue,
