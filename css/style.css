@@ -33,6 +33,8 @@ nav a {
 .three_line_menue,
 .four_line_menue {
   display: none;
+  background: red;
+  padding: 0;
 }
 
 .checkbox_outher{
