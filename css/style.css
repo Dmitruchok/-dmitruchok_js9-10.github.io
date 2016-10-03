@@ -25,23 +25,34 @@ nav a {
   display: flex;
 }
 
-.one_line_menue li {
+.one_line_menue  a {
+  display: block;
+  position: relative;
   padding: 10px 10px;
 }
 
-.two_line_menue,
-.three_line_menue,
-.four_line_menue {
+nav a:hover, nav a:focus, nav a:active {
+  color: rgb(81, 142, 187);
+}
+
+nav li:hover, nav li:focus, nav li:active {
+  background: #fff;
+}
+
+.two_line_menue ul,
+.three_line_menue ul,
+.four_line_menue ul {
   display: none;
-  background: red;
+  background: linear-gradient(to right, #000, #eee);
+  position: absolute;
   padding: 0;
+  z-index: 1;
 }
 
 .checkbox_outher{
   display: flex;
   flex-direction: column;
 }
-
 
 .niceCheck {
   width: 35px;
@@ -56,8 +67,8 @@ nav a {
 }
 
 input[type=checkbox] {
-    position: absolute;
-    clip: rect(0, 0, 0, 0);
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
 }
 label {
   font-size: 14px;
@@ -65,15 +76,15 @@ label {
   cursor: pointer;
 }
 label:before {
-    content: " ";
-    display: inline-block;
-    width: 35px;
-    height: 30px;
-    background: url(../img/checkbox-nice.png);
-    position: relative;
-    top: 3px;
+  content: " ";
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  background: url(../img/checkbox-nice.png);
+  position: relative;
+  top: 3px;
 }
 
 input[type=checkbox]:checked + label:before {
-background-position: -47px 0;
+  background-position: -47px 0;
 }
