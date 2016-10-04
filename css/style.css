@@ -1,15 +1,15 @@
 header {
-  background-image: url(../img/nike-run.png);
-  background-size: contain;
+  background-image: url('../img/bg_green.jpg');
+  background-size: cover;
 }
 
 .fotorama {
-  padding: 30px 0 30px 460px;
+  padding: 50px 0 30px 150px;
   width: 700px;
 }
 
 nav {
-  background: linear-gradient(to right, #000, #636060);;
+  background: linear-gradient(to left, #000, #636060);;
   padding: 10px 0;
 }
 
@@ -55,14 +55,14 @@ ul.submenu_3  {
 }
 
 nav a:hover, nav a:focus, nav a:active {
-  color: rgb(81, 142, 187);
+  color: rgb(175, 239, 68);
 }
 
 .submenu_1,
 .submenu_2,
 .submenu_3 {
   display: none;
-  background: linear-gradient(to right, #000, #636060);
+  background: linear-gradient(to left, #000, #636060);
   position: absolute;
   padding: 0;
   width: 200px;
@@ -71,15 +71,20 @@ nav a:hover, nav a:focus, nav a:active {
 
 .checkbox_outher{
   display: flex;
-  flex-direction: column;
 }
 
 .niceCheck {
+  margin-top: 5px;
   width: 35px;
   height: 30px;
   display: inline-block;
   cursor: pointer;
   background: url(../img/checkbox-nice.png);
+}
+
+p {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .niceCheck input {
